@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../floatmult.srcs/sources_1/new/add.v" \
+"../../../../floatmult.srcs/sources_1/new/fadd.v" \
+"../../../../floatmult.srcs/sources_1/new/4bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

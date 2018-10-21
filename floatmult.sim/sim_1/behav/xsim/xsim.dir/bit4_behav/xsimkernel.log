@@ -1,0 +1,4 @@
+Running: xsim.dir/bit4_behav/xsimk.exe -simmode gui -wdb bit4_behav.wdb -simrunnum 0 -socket 50220
+Design successfully loaded
+Design Loading Memory Usage: 5472 KB (Peak: 5472 KB)
+Design Loading CPU Usage: 30 ms
