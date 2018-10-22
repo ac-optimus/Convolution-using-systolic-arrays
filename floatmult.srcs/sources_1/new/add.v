@@ -23,7 +23,7 @@
 module add(Co,S,A,B,C);
     input A,B,C;
     output Co,S;
-    xor(S,A,B);
+    xor(S,A,B,C);
     wire w1,w2,w3;
     and(w1,A,B);
     and(w2,A,C);

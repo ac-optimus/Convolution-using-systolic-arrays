@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sun Oct 21 11:36:56 2018
-# Process ID: 11476
+# Start of session at: Mon Oct 22 18:21:57 2018
+# Process ID: 2844
 # Current directory: C:/Users/nisar/floatmult/floatmult.runs/synth_1
 # Command line: vivado.exe -log bit4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bit4.tcl
 # Log file: C:/Users/nisar/floatmult/floatmult.runs/synth_1/bit4.vds
