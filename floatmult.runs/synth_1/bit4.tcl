@@ -22,17 +22,17 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/nisar/floatmult/floatmult.cache/wt [current_project]
-set_property parent.project_path C:/Users/nisar/floatmult/floatmult.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.cache/wt [current_project]
+set_property parent.project_path C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/nisar/floatmult/floatmult.cache/ip [current_project]
+set_property ip_output_repo c:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/add.v
-  C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/fadd.v
-  C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/4bit.v
+  C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.srcs/sources_1/new/add.v
+  C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.srcs/sources_1/new/fadd.v
+  C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.srcs/sources_1/new/4bit.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

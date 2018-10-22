@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.2.1 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/nisar/floatmult/floatmult.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatmult.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="478dc899230746d2882443a55a2cd980"/>
@@ -134,7 +134,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -147,6 +147,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
