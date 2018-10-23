@@ -1,8 +1,0 @@
-0.6
-2018.2
-Jul 26 2018
-19:36:16
-C:/Users/nisar/floatmult/floatmult.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/4bit.v,1540101666,verilog,,,,bit4,,,,,,,,
-C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/add.v,1540186235,verilog,,C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/fadd.v,,add,,,,,,,,
-C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/fadd.v,1540101666,verilog,,C:/Users/nisar/floatmult/floatmult.srcs/sources_1/new/4bit.v,,fadd,,,,,,,,
