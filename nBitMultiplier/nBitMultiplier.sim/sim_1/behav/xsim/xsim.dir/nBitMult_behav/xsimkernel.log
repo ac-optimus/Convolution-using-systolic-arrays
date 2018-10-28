@@ -1,7 +1,0 @@
-Running: xsim.dir/nBitMult_behav/xsimk.exe -simmode gui -wdb nBitMult_behav.wdb -simrunnum 0 -socket 50275
-Design successfully loaded
-Design Loading Memory Usage: 5468 KB (Peak: 5468 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 6120 KB (Peak: 6120 KB)
-Simulation CPU Usage: 31 ms
