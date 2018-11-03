@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Oct 31 00:21:35 2018
-| Host         : DESKTOP-F4SJ1VP running 64-bit major release  (build 9200)
+| Date         : Fri Nov  2 15:05:44 2018
+| Host         : DESKTOP-AT1KJVQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file floatingPntMult_utilization_synth.rpt -pb floatingPntMult_utilization_synth.pb
 | Design       : floatingPntMult
 | Device       : 7a35tcpg236-1

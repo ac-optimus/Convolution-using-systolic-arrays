@@ -1,15 +1,15 @@
 `timescale 1ns / 1ps
 
 
-module nBitMult(p,a,b);
+module nBitMult(p,a,b,clk);
     parameter n =5;
     input [n-1:0]a,b;
+    input clk;
     output reg [2*n-1:0]p;
     reg [2*n-1:0]partialProduct[n-1:0];
     
     integer i;
-    integer j;
-    always@(a,b)
+    always@(posedge clk)
         begin
         for (i =0; i<n;i= i+1)
             begin

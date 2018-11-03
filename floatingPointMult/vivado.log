@@ -2,36 +2,54 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Oct 31 00:27:04 2018
-# Process ID: 5512
-# Current directory: C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7756 C:\Users\jsk\Desktop\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
-# Log file: C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult/vivado.log
-# Journal file: C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult\vivado.jou
+# Start of session at: Fri Nov  2 13:21:20 2018
+# Process ID: 8672
+# Current directory: D:/es203/floatingPointMult
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6040 D:\es203\floatingPointMult\floatingPointMult.xpr
+# Log file: D:/es203/floatingPointMult/vivado.log
+# Journal file: D:/es203/floatingPointMult\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult'
+oopen_project D:/es203/floatingPointMult/floatingPointMult.xprINFO: [Project 1-313] Project file moved from 'C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult' since last save.
+CCRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v'.CCRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v'.CCRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Downloads/demo_codes/Seg_7_Display.v', nor could it be found using path 'C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v'.CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Downloads/demo_codes/Basys3_Master.xdc', nor could it be found using path 'C:/Users/jsk/Downloads/demo_codes/Basys3_Master.xdc'.
 Scanning sources...
-Finished scanning sources
+FFinished scanning sourcesWARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'E:/xilink/projects/floatingPointMult/floatingPointMult.cache/ip'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilink/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 805.453 ; gain = 126.051
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/VivINFO: [IP_Flow 19-231open_project: Time (s): cpu = 00:00:50 ; elapsed = 00:01:59 . Memory (MB): peak = 815.695 ; gain = 113.699
 update_compile_order -fileset sources_1
+update_files -from_files D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v -to_files E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v' with file 'D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v'.
+update_compile_order -fileset sources_1
+update_files -from_files D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v -to_files E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v' with file 'D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Nov  2 13:29:06 2018] Launched synth_1...
+Run output will be captured here: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Nov  2 13:34:42 2018] Launched synth_1...
+Run output will be captured here: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'floatingPntMult' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj floatingPntMult_vlog.prj"
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 834.051 ; gain = 0.000
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'compile' step aborted
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 834.051 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nBitMult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floatingPntMult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 849.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '15' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design

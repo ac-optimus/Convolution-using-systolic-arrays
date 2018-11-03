@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v" \
-"E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v" \
+"../../../../floatingPointMult.srcs/sources_1/new/fullAdder.v" \
+"../../../../floatingPointMult.srcs/sources_1/new/nBitMultiplier.v" \
 "../../../../floatingPointMult.srcs/sources_1/new/floatingPntMult.v" \
 
 # compile glbl module
