@@ -1,4 +1,0 @@
-Running: xsim.dir/floatingPntMult_behav/xsimk.exe -simmode gui -wdb floatingPntMult_behav.wdb -simrunnum 0 -socket 49767
-Design successfully loaded
-Design Loading Memory Usage: 5508 KB (Peak: 5508 KB)
-Design Loading CPU Usage: 0 ms

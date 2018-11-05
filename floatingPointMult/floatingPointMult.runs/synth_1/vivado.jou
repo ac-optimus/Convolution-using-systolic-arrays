@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov  5 19:51:06 2018
-# Process ID: 10976
-# Current directory: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1
-# Command line: vivado.exe -log floatingPntMult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source floatingPntMult.tcl
-# Log file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/floatingPntMult.vds
-# Journal file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1\vivado.jou
+# Start of session at: Mon Nov  5 21:07:28 2018
+# Process ID: 7544
+# Current directory: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1
+# Command line: vivado.exe -log RCA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RCA.tcl
+# Log file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/RCA.vds
+# Journal file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source floatingPntMult.tcl -notrace
+source RCA.tcl -notrace

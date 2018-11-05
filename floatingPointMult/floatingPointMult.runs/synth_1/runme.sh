@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1'
+HD_PWD='C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log floatingPntMult.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source floatingPntMult.tcl
+EAStep vivado -log RCA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RCA.tcl

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1541427661">
-  <File Type="PA-TCL" Name="floatingPntMult.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="floatingPntMult_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="floatingPntMult_reports.tcl"/>
-  <File Type="RDS-RDS" Name="floatingPntMult.vds"/>
-  <File Type="RDS-UTIL" Name="floatingPntMult_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="floatingPntMult_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="floatingPntMult.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="floatingPntMult_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="floatingPntMult_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1541432244">
+  <File Type="PA-TCL" Name="RCA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RCA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RCA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RCA.vds"/>
+  <File Type="RDS-UTIL" Name="RCA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RCA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RCA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RCA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RCA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/floatingPntMult.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/fullAdder.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -25,22 +32,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/floatingPntMult.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/RCA.v">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/demo_codes/Seg_7_Display.v">
+    <File Path="$PPRDIR/../../demo_codes/Seg_7_Display.v">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -50,14 +49,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="floatingPntMult"/>
+      <Option Name="TopModule" Val="RCA"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PPRDIR/../Basys3_Master.xdc">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
