@@ -2,54 +2,109 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Nov  2 13:21:20 2018
-# Process ID: 8672
-# Current directory: D:/es203/floatingPointMult
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6040 D:\es203\floatingPointMult\floatingPointMult.xpr
-# Log file: D:/es203/floatingPointMult/vivado.log
-# Journal file: D:/es203/floatingPointMult\vivado.jou
+# Start of session at: Mon Nov  5 19:48:37 2018
+# Process ID: 1240
+# Current directory: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10308 C:\Users\jsk\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
+# Log file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/vivado.log
+# Journal file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult\vivado.jou
 #-----------------------------------------------------------
 start_gui
-oopen_project D:/es203/floatingPointMult/floatingPointMult.xprINFO: [Project 1-313] Project file moved from 'C:/Users/jsk/Desktop/matrix-multiplication-using-systolic-arrays/floatingPointMult' since last save.
-CCRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v'.CCRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v'.CCRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Downloads/demo_codes/Seg_7_Display.v', nor could it be found using path 'C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v'.CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Downloads/demo_codes/Basys3_Master.xdc', nor could it be found using path 'C:/Users/jsk/Downloads/demo_codes/Basys3_Master.xdc'.
+open_project C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
+INFO: [Project 1-313] Project file moved from 'D:/es203/floatingPointMult' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Downloads/demo_codes/Seg_7_Display.v', nor could it be found using path 'D:/../Downloads/demo_codes/Seg_7_Display.v'.
 Scanning sources...
-FFinished scanning sourcesWARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'E:/xilink/projects/floatingPointMult/floatingPointMult.cache/ip'.
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/VivINFO: [IP_Flow 19-231open_project: Time (s): cpu = 00:00:50 ; elapsed = 00:01:59 . Memory (MB): peak = 815.695 ; gain = 113.699
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilink/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 888.324 ; gain = 178.094
 update_compile_order -fileset sources_1
-update_files -from_files D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v -to_files E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v -filesets [get_filesets *]
-INFO: [filemgmt 20-762] Replacing file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/fullAdder.v' with file 'D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v'.
-update_compile_order -fileset sources_1
-update_files -from_files D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v -to_files E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v -filesets [get_filesets *]
-INFO: [filemgmt 20-762] Replacing file 'E:/xilink/projects/PROJECT/PROJECT.srcs/sources_1/new/nBitMultiplier.v' with file 'D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v'.
-update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v]
+set_property is_enabled false [get_files  C:/Users/jsk/matrix-multiplication-using-systolic-arrays/Basys3_Master.xdc]
 reset_run synth_1
 launch_runs synth_1 -jobs 2
-[Fri Nov  2 13:29:06 2018] Launched synth_1...
-Run output will be captured here: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Fri Nov  2 13:34:42 2018] Launched synth_1...
-Run output will be captured here: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
+[Mon Nov  5 19:51:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'floatingPntMult' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj floatingPntMult_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module nBitMult
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module floatingPntMult
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/es203/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 849.410 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '15' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 916.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilink/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 40d0c251f5ba458089941aac8294406e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot floatingPntMult_behav xil_defaultlib.floatingPntMult xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:21]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 3 for port a [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.nBitMult
+Compiling module xil_defaultlib.fullAdder
+Compiling module xil_defaultlib.floatingPntMult
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot floatingPntMult_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/xsim.dir/floatingPntMult_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/xsim.dir/floatingPntMult_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov  5 19:52:22 2018. For additional details about this file, please refer to the WebTalk help file at E:/xilink/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov  5 19:52:22 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 916.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "floatingPntMult_behav -key {Behavioral:sim_1:Functional:floatingPntMult} -tclbatch {floatingPntMult.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source floatingPntMult.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 927.156 ; gain = 10.586
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'floatingPntMult_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 927.156 ; gain = 10.586
+add_force {/floatingPntMult/a} -radix bin {10111000 0ns}
+add_force {/floatingPntMult/b} -radix bin {10110000 0ns}
+add_force {/floatingPntMult/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+run 10 us
+add_force {/floatingPntMult/b} -radix bin {10000000 0ns}
+run 10 us
+add_force {/floatingPntMult/a} -radix bin {10100000 0ns}
+add_force {/floatingPntMult/b} -radix bin {10110000 0ns}
+run 10 us
+add_force {/floatingPntMult/b} -radix bin {00110000 0ns}
+add_force {/floatingPntMult/a} -radix bin {00100000 0ns}
+run 10 us

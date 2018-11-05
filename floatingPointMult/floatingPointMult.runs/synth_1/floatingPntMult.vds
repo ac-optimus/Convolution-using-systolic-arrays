@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Nov  2 15:04:49 2018
-# Process ID: 11060
-# Current directory: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1
+# Start of session at: Mon Nov  5 19:51:06 2018
+# Process ID: 10976
+# Current directory: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1
 # Command line: vivado.exe -log floatingPntMult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source floatingPntMult.tcl
-# Log file: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/floatingPntMult.vds
-# Journal file: D:/es203/floatingPointMult/floatingPointMult.runs/synth_1\vivado.jou
+# Log file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/floatingPntMult.vds
+# Journal file: C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source floatingPntMult.tcl -notrace
 Command: synth_design -top floatingPntMult -part xc7a35tcpg236-1
@@ -15,143 +15,41 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6660 
+INFO: Helper process launched with PID 7920 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 414.941 ; gain = 96.012
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 424.395 ; gain = 95.988
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'floatingPntMult' [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
-INFO: [Synth 8-6157] synthesizing module 'nBitMult' [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:4]
+INFO: [Synth 8-6157] synthesizing module 'floatingPntMult' [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nBitMult' [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:4]
 	Parameter n bound to: 5 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[4] was removed.  [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
-WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[3] was removed.  [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
-WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[2] was removed.  [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
-WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[1] was removed.  [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
-WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[0] was removed.  [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'nBitMult' (1#1) [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:4]
-INFO: [Synth 8-6157] synthesizing module 'fullAdder' [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:4]
+WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[4] was removed.  [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
+WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[3] was removed.  [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
+WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[2] was removed.  [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
+WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[1] was removed.  [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
+WARNING: [Synth 8-6014] Unused sequential element partialProduct_reg[0] was removed.  [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'nBitMult' (1#1) [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fullAdder' [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:4]
 	Parameter n bound to: 3 - type: integer 
-WARNING: [Synth 8-567] referenced signal 'cin' should be on the sensitivity list [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'fullAdder' (2#1) [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:4]
-WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'fullAdder' [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'floatingPntMult' (3#1) [D:/es203/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
+WARNING: [Synth 8-567] referenced signal 'cin' should be on the sensitivity list [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'fullAdder' (2#1) [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:4]
+WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'fullAdder' [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'floatingPntMult' (3#1) [C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 470.078 ; gain = 151.148
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 479.430 ; gain = 151.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 470.078 ; gain = 151.148
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 470.078 ; gain = 151.148
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [D:/es203/Basys3_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [D:/es203/Basys3_Master.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:83]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [D:/es203/Basys3_Master.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:84]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [D:/es203/Basys3_Master.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:85]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [D:/es203/Basys3_Master.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:86]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [D:/es203/Basys3_Master.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [D:/es203/Basys3_Master.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:88]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [D:/es203/Basys3_Master.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:89]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [D:/es203/Basys3_Master.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:90]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [D:/es203/Basys3_Master.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:91]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [D:/es203/Basys3_Master.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:92]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [D:/es203/Basys3_Master.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:93]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [D:/es203/Basys3_Master.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:94]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [D:/es203/Basys3_Master.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [D:/es203/Basys3_Master.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:96]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [D:/es203/Basys3_Master.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:101]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [D:/es203/Basys3_Master.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:102]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [D:/es203/Basys3_Master.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [D:/es203/Basys3_Master.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:104]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [D:/es203/Basys3_Master.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:105]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [D:/es203/Basys3_Master.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:106]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [D:/es203/Basys3_Master.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:107]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [D:/es203/Basys3_Master.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/es203/Basys3_Master.xdc:108]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [D:/es203/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/es203/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/floatingPntMult_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/floatingPntMult_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 777.137 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 777.137 ; gain = 458.207
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 479.430 ; gain = 151.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 777.137 ; gain = 458.207
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 479.430 ; gain = 151.023
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 777.137 ; gain = 458.207
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 777.137 ; gain = 458.207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 479.430 ; gain = 151.023
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,6 +57,7 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -215,6 +114,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
@@ -227,7 +127,7 @@ WARNING: [Synth 8-3332] Sequential element (n1/p_reg[1]) is unused and will be r
 WARNING: [Synth 8-3332] Sequential element (n1/p_reg[0]) is unused and will be removed from module floatingPntMult.
 WARNING: [Synth 8-3332] Sequential element (m1_reg[4]) is unused and will be removed from module floatingPntMult.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 777.137 ; gain = 458.207
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -235,17 +135,12 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 792.074 ; gain = 473.145
----------------------------------------------------------------------------------
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 801.676 ; gain = 482.746
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -257,7 +152,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,7 +176,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -294,7 +189,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,25 +201,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -360,11 +255,11 @@ Report Instance Areas:
 |2     |  n1     |nBitMult |    43|
 +------+---------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 802.180 ; gain = 483.250
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 802.180 ; gain = 176.191
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 802.180 ; gain = 483.250
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 616.555 ; gain = 288.148
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -374,11 +269,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 34 Warnings, 22 Critical Warnings and 0 Errors encountered.
+17 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 810.727 ; gain = 504.430
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 715.117 ; gain = 398.832
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'D:/es203/floatingPointMult/floatingPointMult.runs/synth_1/floatingPntMult.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/floatingPntMult.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file floatingPntMult_utilization_synth.rpt -pb floatingPntMult_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 810.727 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  2 15:05:44 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.634 . Memory (MB): peak = 715.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  5 19:51:43 2018...

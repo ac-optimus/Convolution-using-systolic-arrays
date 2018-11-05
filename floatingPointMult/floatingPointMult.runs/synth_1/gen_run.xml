@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1541151284">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1541427661">
   <File Type="PA-TCL" Name="floatingPntMult.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="floatingPntMult_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="floatingPntMult_reports.tcl"/>
@@ -34,7 +34,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/RCA.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -57,6 +57,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PPRDIR/../Basys3_Master.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
