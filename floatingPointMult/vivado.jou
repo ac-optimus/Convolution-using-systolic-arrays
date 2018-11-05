@@ -2,36 +2,18 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov  5 21:01:54 2018
-# Process ID: 3960
+# Start of session at: Mon Nov  5 21:38:51 2018
+# Process ID: 1412
 # Current directory: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6704 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
 # Log file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/vivado.log
 # Journal file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-launch_simulation
-source floatingPntMult.tcl
-add_force {/floatingPntMult/a} -radix bin {00100000 0ns}
-add_force {/floatingPntMult/b} -radix bin {00110000 0ns}
-add_force {/floatingPntMult/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
-run 10 us
-add_force {/floatingPntMult/b} -radix bin {00101000 0ns}
-run 10 us
-set_property is_enabled true [get_files  C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v]
-update_compile_order -fileset sources_1
-set_property is_enabled true [get_files  C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/Basys3_Master.xdc]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top RCA [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
@@ -39,3 +21,14 @@ launch_runs impl_1 -jobs 2
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/RCA.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/RCA.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

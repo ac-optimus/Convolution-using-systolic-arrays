@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7924 
+INFO: Helper process launched with PID 3640 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 425.004 ; gain = 96.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 424.445 ; gain = 95.363
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RCA' [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:4]
 INFO: [Synth 8-6157] synthesizing module 'floatingPntMult' [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
@@ -34,22 +34,16 @@ WARNING: [Synth 8-567] referenced signal 'cin' should be on the sensitivity list
 INFO: [Synth 8-6155] done synthesizing module 'fullAdder' (2#1) [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v:4]
 WARNING: [Synth 8-689] width (4) of port connection 'a' does not match port width (3) of module 'fullAdder' [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'floatingPntMult' (3#1) [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:3]
-WARNING: [Synth 8-3848] Net an in module/entity RCA does not have driver. [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:8]
-WARNING: [Synth 8-3848] Net seg in module/entity RCA does not have driver. [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'RCA' (4#1) [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:4]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[3]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[2]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[1]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[0]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[6]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[5]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[4]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[3]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[2]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[1]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[0]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (4#1) [C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v:21]
+WARNING: [Synth 8-689] width (8) of port connection 'x' does not match port width (16) of module 'seg7decimal' [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:12]
+WARNING: [Synth 8-689] width (32) of port connection 'dp' does not match port width (1) of module 'seg7decimal' [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:12]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'RCA' (5#1) [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v:4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 480.137 ; gain = 151.578
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 479.309 ; gain = 150.227
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -62,10 +56,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 480.137 ; gain = 151.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 479.309 ; gain = 150.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 480.137 ; gain = 151.578
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 479.309 ; gain = 150.227
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -81,25 +75,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 786.285 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 806.035 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 786.285 ; gain = 457.727
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 786.285 ; gain = 457.727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 786.285 ; gain = 457.727
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 786.285 ; gain = 457.727
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -121,8 +115,11 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -151,6 +148,13 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input      7 Bit        Muxes := 1     
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -167,17 +171,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design RCA has unconnected port an[3]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[2]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[1]
-WARNING: [Synth 8-3331] design RCA has unconnected port an[0]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[6]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[5]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[4]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[3]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[2]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[1]
-WARNING: [Synth 8-3331] design RCA has unconnected port seg[0]
 INFO: [Synth 8-3886] merging instance 'm1/m2_reg[4]' (FD) to 'm1/m1_reg[4]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m1/m1_reg[4] )
 WARNING: [Synth 8-3332] Sequential element (m1/n1/p_reg[3]) is unused and will be removed from module RCA.
@@ -186,7 +179,7 @@ WARNING: [Synth 8-3332] Sequential element (m1/n1/p_reg[1]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (m1/n1/p_reg[0]) is unused and will be removed from module RCA.
 WARNING: [Synth 8-3332] Sequential element (m1/m1_reg[4]) is unused and will be removed from module RCA.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 786.285 ; gain = 457.727
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -198,13 +191,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 801.469 ; gain = 472.910
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.035 ; gain = 476.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 811.078 ; gain = 482.520
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.023 ; gain = 485.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,7 +209,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,7 +233,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -253,7 +246,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -265,25 +258,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -300,34 +293,35 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     5|
-|3     |LUT2   |     6|
-|4     |LUT3   |    11|
-|5     |LUT4   |     6|
-|6     |LUT5   |     7|
-|7     |LUT6   |     4|
-|8     |FDRE   |    22|
-|9     |IBUF   |    17|
-|10    |OBUF   |     8|
-|11    |OBUFT  |    11|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     1|
+|4     |LUT2   |    10|
+|5     |LUT3   |    11|
+|6     |LUT4   |    17|
+|7     |LUT5   |     7|
+|8     |LUT6   |     4|
+|9     |FDRE   |    46|
+|10    |IBUF   |    17|
+|11    |OBUF   |    19|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+----------------+------+
 |      |Instance |Module          |Cells |
 +------+---------+----------------+------+
-|1     |top      |                |    98|
+|1     |top      |                |   143|
 |2     |  m1     |floatingPntMult |    61|
 |3     |    n1   |nBitMult        |    43|
+|4     |  s1     |seg7decimal     |    45|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 811.582 ; gain = 483.023
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 811.582 ; gain = 176.875
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 811.582 ; gain = 483.023
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 815.527 ; gain = 159.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 815.527 ; gain = 486.445
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -335,11 +329,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+26 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 821.133 ; gain = 504.645
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 827.328 ; gain = 510.504
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/RCA.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RCA_utilization_synth.rpt -pb RCA_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 821.133 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  5 21:08:14 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 827.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  5 21:42:07 2018...

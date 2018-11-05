@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Nov  5 21:09:46 2018
+| Date         : Mon Nov  5 21:43:27 2018
 | Host         : DESKTOP-F4SJ1VP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file RCA_control_sets_placed.rpt
 | Design       : RCA
@@ -44,7 +44,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              44 |           10 |
+| No           | No                    | No                     |             108 |           20 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -59,7 +59,7 @@ Table of Contents
 +----------------+---------------+------------------+------------------+----------------+
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               |                  |               10 |             44 |
+|  clk_IBUF_BUFG |               |                  |               20 |            108 |
 +----------------+---------------+------------------+------------------+----------------+
 
 

@@ -29,6 +29,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo e:/xilink/projects/floatingPointMult/floatingPointMult.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/jsk/Downloads/demo_codes/Seg_7_Display.v
   C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v
   C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v
   C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v

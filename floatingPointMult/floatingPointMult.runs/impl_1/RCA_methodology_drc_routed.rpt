@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Nov  5 21:10:18 2018
+| Date         : Mon Nov  5 21:44:08 2018
 | Host         : DESKTOP-F4SJ1VP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file RCA_methodology_drc_routed.rpt -pb RCA_methodology_drc_routed.pb -rpx RCA_methodology_drc_routed.rpx
 | Design       : RCA
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 24
+             Violations found: 35
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 24         |
+| TIMING-18 | Warning  | Missing input or output delay | 35         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -114,42 +114,97 @@ Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on out[0] relative to clock(s) sys_clk_pin
+An output delay is missing on an[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on out[1] relative to clock(s) sys_clk_pin
+An output delay is missing on an[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on out[2] relative to clock(s) sys_clk_pin
+An output delay is missing on an[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on out[3] relative to clock(s) sys_clk_pin
+An output delay is missing on an[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on out[4] relative to clock(s) sys_clk_pin
+An output delay is missing on out[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on out[5] relative to clock(s) sys_clk_pin
+An output delay is missing on out[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on out[6] relative to clock(s) sys_clk_pin
+An output delay is missing on out[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
+An output delay is missing on out[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on out[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on out[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on out[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
 An output delay is missing on out[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

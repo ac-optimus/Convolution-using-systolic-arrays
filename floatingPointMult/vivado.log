@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov  5 21:01:54 2018
-# Process ID: 3960
+# Start of session at: Mon Nov  5 21:38:51 2018
+# Process ID: 1412
 # Current directory: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6704 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
 # Log file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/vivado.log
 # Journal file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult\vivado.jou
 #-----------------------------------------------------------
@@ -13,97 +13,51 @@ start_gui
 open_project C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult'
-INFO: [Project 1-313] Project file moved from 'C:/Users/jsk/matrix-multiplication-using-systolic-arrays/floatingPointMult' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilink/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 804.926 ; gain = 141.906
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 777.551 ; gain = 135.797
 update_compile_order -fileset sources_1
-reset_run synth_1
 launch_runs synth_1 -jobs 2
-[Mon Nov  5 21:03:18 2018] Launched synth_1...
+[Mon Nov  5 21:41:04 2018] Launched synth_1...
 Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'floatingPntMult' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj floatingPntMult_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/fullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/nBitMultiplier.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module nBitMult
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module floatingPntMult
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: E:/xilink/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 40d0c251f5ba458089941aac8294406e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot floatingPntMult_behav xil_defaultlib.floatingPntMult xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:21]
-WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 3 for port a [C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/floatingPntMult.v:22]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.nBitMult
-Compiling module xil_defaultlib.fullAdder
-Compiling module xil_defaultlib.floatingPntMult
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot floatingPntMult_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "floatingPntMult_behav -key {Behavioral:sim_1:Functional:floatingPntMult} -tclbatch {floatingPntMult.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source floatingPntMult.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'floatingPntMult_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 852.883 ; gain = 15.543
-add_force {/floatingPntMult/a} -radix bin {00100000 0ns}
-add_force {/floatingPntMult/b} -radix bin {00110000 0ns}
-add_force {/floatingPntMult/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
-run 10 us
-add_force {/floatingPntMult/b} -radix bin {00101000 0ns}
-run 10 us
-set_property is_enabled true [get_files  C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.srcs/sources_1/new/RCA.v]
-update_compile_order -fileset sources_1
-set_property is_enabled true [get_files  C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/Basys3_Master.xdc]
-set_property top RCA [current_fileset]
-update_compile_order -fileset sources_1
 reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1
-
 launch_runs synth_1 -jobs 2
-[Mon Nov  5 21:07:24 2018] Launched synth_1...
+[Mon Nov  5 21:41:19 2018] Launched synth_1...
 Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 2
-[Mon Nov  5 21:08:34 2018] Launched impl_1...
+[Mon Nov  5 21:42:19 2018] Launched impl_1...
 Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Mon Nov  5 21:10:32 2018] Launched impl_1...
+[Mon Nov  5 21:44:27 2018] Launched impl_1...
 Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A77DA
+set_property PROGRAM.FILE {C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/RCA.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/RCA.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  5 21:49:30 2018...

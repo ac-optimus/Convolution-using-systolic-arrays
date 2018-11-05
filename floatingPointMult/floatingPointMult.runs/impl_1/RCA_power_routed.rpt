@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Nov  5 21:10:20 2018
+| Date             : Mon Nov  5 21:44:12 2018
 | Host             : DESKTOP-F4SJ1VP running 64-bit major release  (build 9200)
 | Command          : report_power -file RCA_power_routed.rpt -pb RCA_power_summary_routed.pb -rpx RCA_power_routed.rpx
 | Design           : RCA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.092        |
+| Total On-Chip Power (W)  | 0.108        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.021        |
+| Dynamic (W)              | 0.036        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       67 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       24 |     20800 |            0.12 |
-|   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
-|   Register     |    <0.001 |       22 |     41600 |            0.05 |
+| Slice Logic    |    <0.001 |      120 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       33 |     20800 |            0.16 |
+|   Register     |    <0.001 |       54 |     41600 |            0.13 |
+|   CARRY4       |    <0.001 |       10 |      8150 |            0.12 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |       53 |       --- |             --- |
-| I/O            |     0.020 |       36 |       106 |           33.96 |
+| Signals        |    <0.001 |      112 |       --- |             --- |
+| I/O            |     0.034 |       36 |       106 |           33.96 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.092 |          |           |                 |
+| Total          |     0.108 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
+| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.011 |       0.010 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,10 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| RCA    |     0.021 |
-|   m1   |    <0.001 |
+| RCA    |     0.036 |
+|   m1   |     0.001 |
 |     n1 |    <0.001 |
+|   s1   |    <0.001 |
 +--------+-----------+
 
 

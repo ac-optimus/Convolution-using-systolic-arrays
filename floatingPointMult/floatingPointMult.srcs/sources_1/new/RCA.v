@@ -9,5 +9,5 @@ module RCA(out,a,b,clk,an,seg);
 	output [6:0] seg;   //this wont change
 	wire dp;
 	floatingPntMult m1(out,a,b,clk);
-	//seg7decimal s1(p,clk,0,seg,an,0);
+	seg7decimal s1(out,clk,0,seg,an,0);
 endmodule
