@@ -2,32 +2,40 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Nov  6 12:36:34 2018
-# Process ID: 10632
+# Start of session at: Mon Nov  5 21:38:51 2018
+# Process ID: 1412
 # Current directory: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10500 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\jsk\Downloads\matrix-multiplication-using-systolic-arrays\floatingPointMult\floatingPointMult.xpr
 # Log file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/vivado.log
 # Journal file: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult\vivado.jou
 #-----------------------------------------------------------
-start_guopen_project C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
+start_gui
+open_project C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult'
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-ININFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilink/Vivado/2018.2/data/ip'opopen_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 876.414 ; gain = 133.03upupdate_compile_order -fileset sources_1
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilink/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 777.551 ; gain = 135.797
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Mon Nov  5 21:41:04 2018] Launched synth_1...
+Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Nov  5 21:41:19 2018] Launched synth_1...
+Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon Nov  5 21:42:19 2018] Launched impl_1...
+Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Nov  5 21:44:27 2018] Launched impl_1...
+Run output will be captured here: C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2018.2
-  **** Build date : Jun 14 2018-20:42:52
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
-
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A77DA
 set_property PROGRAM.FILE {C:/Users/jsk/Downloads/matrix-multiplication-using-systolic-arrays/floatingPointMult/floatingPointMult.runs/impl_1/RCA.bit} [get_hw_devices xc7a35t_0]
@@ -51,6 +59,5 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A77DA
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  6 12:47:25 2018...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  5 21:49:30 2018...
