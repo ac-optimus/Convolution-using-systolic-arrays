@@ -2,7 +2,7 @@
 # Abstract
 
 
-The projects aims to develope systolic array architecture for convolution. Google's [Tensor Processing units (TPUs)](https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)uses Systolic arrays architecture, for Google services such as Google Search, Street View, Google Photos and Google Translate to accelerate their neural network computations behind the scenes.
+The project aims to develope systolic array architecture for convolution. Google's [Tensor Processing units (TPUs)](https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)uses Systolic arrays architecture, for Google services such as Google Search, Street View, Google Photos and Google Translate to accelerate their neural network computations behind the scenes.
 
 
 Systolic arrays have lot of potential that is yet to  explore, it was first introduced in this [paper](http://www.eecs.harvard.edu/~htk/publication/1982-kung-why-systolic-architecture.pdf).
